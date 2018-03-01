@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Magic Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="calculatorStyles.css">
+    <audio autoplay id="musicCurrent">
+        <source src="" type="audio/mpeg">
+    </audio>
+</head>
+<body>
+    <h1 id="heading"> 
+        Calculator Bizzo
+    </h1>
+    <div>
+       <button id="1" class="btn-default btn-lg num" onclick="inputNumber(1)">
+            1
+        </button>
+        <button id="2" class="btn-default btn-lg num" onclick="inputNumber(2)">
+            2
+        </button>
+        <button id="3" class="btn-default btn-lg num" onclick="inputNumber(3)">
+            3
+        </button>
+        <button id="+" class="btn-default btn-lg operator" onclick="inputOperator('plus')">
+            +
+        </button>
+    </div>
+    <div>
+        <button id="4" class="btn-default btn-lg num" onclick="inputNumber(4)">
+            4
+        </button>
+        <button id="5" class="btn-default btn-lg num" onclick="inputNumber(5)">
+            5
+        </button>
+        <button id="6" class="btn-default btn-lg num" onclick="inputNumber(6)">
+            6
+        </button>
+        <button id="-" class="btn-default btn-lg operator" onclick="inputOperator('minus')">
+            -
+        </button>
+    </div>
+    <div>
+        <button id="7" class="btn-default btn-lg num" onclick="inputNumber(7)">
+            7
+        </button>
+        <button id="8" class="btn-default btn-lg num" onclick="inputNumber(8)">
+            8
+        </button>
+        <button id="9" class="btn-default btn-lg num" onclick="inputNumber(9)">
+            9
+        </button>
+        <button id="x" class="btn-default btn-lg operator" onclick="inputOperator('times')">
+            x
+        </button>
+    </div>
+    <div>
+        <button id="clear" class="btn-warning btn-lg" onclick="inputClear()">
+            CLEAR
+        </button>
+        <button id="0" class="btn-default btn-lg num" onclick="inputNumber(0)">
+            0
+        </button>
+        <button id="/" class="btn-default btn-lg operator" onclick="inputOperator('divide')">
+            /
+        </button>                
+    </div>
+    <div>
+        <button id="=" class="btn-success btn-lg equals" onclick="inputEquals()">
+            =
+        </button>
+    </div>
+    <div id="inputText">
+
+    </div>
+    <div id="inputSecret">
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="calculatorApp.js"></script>
+</body>
+</html>

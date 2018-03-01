@@ -1,0 +1,10 @@
+html, body {
+    text-align: center;
+    background-color: #AFAFAF;
+    font-family: "comic sans ms";
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
